@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contador </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <main>
+        <header>Vamos contar!</header>
+
+        <section id="container-geral">
+
+            <div class="contador">
+                <p>Início:
+                    <input type="number" id="txti">
+                </p>
+                <p>Fim:
+                    <input type="number" id="txtf">
+                </p>
+                <p>Passo:
+                    <input type="number" id="txtp">
+                </p>
+
+                <div id="res"></div>
+
+                <div id="botoes">
+                    <input type="button" value="Contar" id="enviar">
+                    <input type="button" value="Limpar" id="limpar">
+                </div>
+            </div>
+
+            <div id="container-carrosel">
+                <p id="tittle-carrosel">Carrosel</p>
+                <aside id="carrosel">
+                    <span class="material-symbols-outlined" id="backward"> arrow_back </span>
+                    <img src="imgs/1.png" width="70%" id="img">
+                    <span class="material-symbols-outlined" id="forward"> arrow_forward </span>
+                </aside>
+            </div>
+
+        </section>
+
+        <footer>Alysson Melo 2024 &copy;Todos os direitos reservados </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
