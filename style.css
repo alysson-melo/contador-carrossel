@@ -28,7 +28,7 @@ header {
     font-size: 28px;
 }
 
-section {
+#container-geral {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,11 +36,12 @@ section {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 250px;
     margin: 0 auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
     color: black;
+    gap: 30px;
     background-color: white;
 }
 
@@ -60,6 +61,11 @@ section>div {
 
 #txtp {
     width: 100px;
+}
+
+#res {
+    margin-top: 20px;
+    width: 20rem;
 }
 
 #botoes {
@@ -96,12 +102,12 @@ section>div {
 }
 
 #container-carrosel {
-    width: 65%;
+    width: 15rem;
     
 }
 
 #tittle-carrosel {
-    font-size: 28px;
+    font-size: 25px;
 }
 
 #carrosel {

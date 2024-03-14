@@ -16,17 +16,20 @@ function contar() {
         if (p <= 0) {
             alert('Passo inválido, iremos considerar isso como "passo 1"')
             p = 1
+            txtp.value = '1'
         }
 
         res.innerHTML = ''
 
         if (i < f) {
+            i += 1
             //contagem crescente
             for (let c = i; c <= f; c += p) {
                 res.innerHTML += `${c} `
             }
         } else {
             //contagem regressiva
+            i -= 1
             for (let c = i; c >= f; c -= p) {
                 res.innerHTML += `${c} `
             }
