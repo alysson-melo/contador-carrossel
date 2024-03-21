@@ -134,6 +134,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+    main {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
     #container-geral {
         display: flex;
         gap: 50px;
