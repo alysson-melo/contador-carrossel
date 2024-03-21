@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+/* Typical Device Breakpoints
+
+Mobile devices – 320px — 480px.
+Tablets and mobile devices – 481px — 768px.
+Laptops and tablets – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more. */
+
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +49,6 @@ header {
     margin: 0 auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
     color: black;
-    gap: 30px;
     background-color: white;
 }
 
@@ -101,11 +108,6 @@ section>div {
     background-color: #4d85fd;
 }
 
-#container-carrosel {
-    width: 15rem;
-    
-}
-
 #tittle-carrosel {
     font-size: 25px;
 }
@@ -114,6 +116,7 @@ section>div {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 15rem;
 }
 
 #backward {
@@ -128,4 +131,20 @@ footer {
     margin-top: 20px;
     text-align: center;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #container-geral {
+        display: flex;
+        gap: 50px;
+    }
+
+    .contador {
+        width: 90px;
+    }
+
+    #carrosel {
+        width: 90px;
+    }
+
 }
