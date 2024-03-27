@@ -1,11 +1,16 @@
 let enviar = document.querySelector('#enviar')
 enviar.addEventListener('click', contar)
+let containerCarrossel = document.querySelector('#container-carrosel')
 
 function contar() {
     let txti = document.querySelector('#txti')
     let txtf = document.querySelector('#txtf')
     let txtp = document.querySelector('#txtp')
     let res = document.querySelector('#res')
+
+    if (window.innerWidth <= 768) {
+        containerCarrossel.classList.add('responsividade-carrossel')
+    }
 
     if (txti.value.length == 0 || txtf.value.length == 0 || txtp.value.length == 0) {
         alert('Por favor, verifique os dados e tente novamente!')
@@ -45,6 +50,11 @@ function clear() {
     txtf.value = ''
     txtp.value = ''
     res.innerHTML = ''
+
+    if (window.innerWidth <= 768) {
+        containerCarrossel.classList.remove('responsividade-carrossel')
+    }
+    
 }
 
 let forward = document.querySelector('#forward')
