@@ -14,6 +14,7 @@ function contar() {
 
     if (txti.value.length == 0 || txtf.value.length == 0 || txtp.value.length == 0) {
         alert('Por favor, verifique os dados e tente novamente!')
+        containerCarrossel.classList.remove('responsividade-carrossel')
     } else {
         let i = Number(txti.value)
         let f = Number(txtf.value)
